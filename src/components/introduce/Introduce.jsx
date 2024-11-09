@@ -2,7 +2,7 @@ import { HiHome } from "react-icons/hi2";
 import { Description } from "../../ui/description/Description.style";
 import { Container } from "./Introduce.style";
 import Header from "../../ui/header/Header";
-import ResumeButton from "../resume/resume-button/ResumeButton";
+import ResumeButton from "../resume/parts/resume-button/ResumeButton";
 // import { motion } from "framer-motion";
 function Introduce() {
   return (

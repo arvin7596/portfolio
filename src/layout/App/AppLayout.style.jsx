@@ -10,13 +10,6 @@ const Content = styled.div`
   /* top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
-  max-width: 1130px;
-  height: 100vh;
-  overflow: auto;
-  margin: auto;
-  &::-webkit-scrollbar {
-    display: none;
-  }
 `;
 
 const VideoBackground = styled.div`
