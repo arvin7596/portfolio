@@ -1,5 +1,5 @@
 import { Container } from "./Resume.style";
-import ResumeItem from "./ResumeItem";
+import ResumeItem from "./parts/resume-item/ResumeItem";
 import Header from "./../../ui/header/Header";
 import { HiMiniBriefcase } from "react-icons/hi2";
 
