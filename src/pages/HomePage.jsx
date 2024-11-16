@@ -5,6 +5,8 @@ import Resume from "../components/resume/Resume";
 import Section from "./../ui/section/Section";
 import Skills from "../components/skills/Skills";
 import Contact from "../components/contact/Contact";
+import Sidebar from "../components/sidebar/sidebar";
+
 // import { useInView } from "react-intersection-observer";
 
 // const section = {
@@ -23,6 +25,7 @@ function HomePage() {
   return (
     <HomeLayout>
       <Section>
+        <Sidebar />
         <Introduce />
       </Section>
       <Section>
