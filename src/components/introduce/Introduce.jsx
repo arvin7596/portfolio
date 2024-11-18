@@ -3,22 +3,20 @@ import { Description } from "../../ui/description/Description.style";
 import { Container } from "./Introduce.style";
 import Header from "../../ui/header/Header";
 import ResumeButton from "../resume/parts/resume-button/ResumeButton";
-// import { motion } from "framer-motion";
+import { useIntroduce } from "./useIntroduce";
+
 function Introduce() {
+  const { userInfo, loadingUserInfo } = useIntroduce();
+  if (loadingUserInfo) return <></>;
+
   return (
-    // <motion.div
-    //   initial={{ opacity: 0 }}
-    //   animate={{ opacity: 1 }}
-    //   transition={{ duration: 1 }}
-    // >
     <Container>
       <Header icon={<HiHome />} title="introduce" isLarge={true}>
-        Say Hi from <span>Arvin</span>, Front-End Developer
+        Say Hi from <span>{userInfo.name}</span>, {userInfo.job}
       </Header>
-      <Description>This is description</Description>
+      <Description>{userInfo["introduce_description"]}</Description>
       <ResumeButton />
     </Container>
-    // </motion.div>
   );
 }
 
