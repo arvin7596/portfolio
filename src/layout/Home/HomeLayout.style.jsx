@@ -4,11 +4,8 @@ const Container = styled.div`
   padding: 0 15px;
   max-width: 1130px;
   height: 100vh;
-  overflow: auto;
+  /* overflow: auto; */
   margin: auto;
-  &::-webkit-scrollbar {
-    display: none;
-  }
 `;
 
 const Content = styled.div`

@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
-const Container = styled.div``;
-
 const Content = styled.div`
   position: relative;
   z-index: 1;
   color: white;
   text-align: center;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  padding-top: 68px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const VideoBackground = styled.div`
@@ -30,4 +30,4 @@ const Video = styled.video`
   z-index: -1;
 `;
 
-export { Container, Video, Content, VideoBackground };
+export { Video, Content, VideoBackground };

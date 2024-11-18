@@ -9,7 +9,6 @@ function HomeLayout({ children }) {
       <Container>
         <Content>{children}</Content>
       </Container>
-      ;
     </>
   );
 }

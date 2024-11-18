@@ -12,10 +12,9 @@ const StyledHeader = styled.header`
   line-height: 90px;
   margin-bottom: 43px;
   font-weight: 300;
-  color: var(--color-grey-0);
-
+  color: var(--color-grey-900);
   span {
-    color: var(--color-green-700);
+    color: var(--color-primary);
   }
 `;
 
