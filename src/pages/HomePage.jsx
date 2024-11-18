@@ -2,44 +2,40 @@ import Introduce from "./../components/introduce/Introduce";
 import HomeLayout from "../layout/Home/HomeLayout";
 import About from "../components/about/about";
 import Resume from "../components/resume/Resume";
-import Section from "./../ui/section/Section";
+import Animated from "../ui/animated/Animated";
 import Skills from "../components/skills/Skills";
 import Contact from "../components/contact/Contact";
 import Sidebar from "../components/sidebar/sidebar";
-
-// import { useInView } from "react-intersection-observer";
-
-// const section = {
-//   height: "100vh",
-//   display: "flex",
-//   justifyContent: "center",
-//   alignItems: "center",
-//   fontSize: "2rem",
-// };
+import React, { useEffect } from "react";
+import { getUserInfo } from "../services/apiUserInfo";
 
 function HomePage() {
-  // const { ref, inView } = useInView({
-  //   triggerOnce: true,
-  //   threshold: 0.1,
-  // });
+  useEffect(() => {
+    getUserInfo();
+  }, []);
   return (
     <HomeLayout>
-      <Section>
+      <>
         <Sidebar />
         <Introduce />
-      </Section>
-      <Section>
+      </>
+      <Animated>
         <About />
-      </Section>
-      <Section>
+      </Animated>
+      <Animated
+        animationVariants={{
+          visible: { opacity: 1, scale: 1.1, transition: { duration: 0.5 } },
+          hidden: { opacity: 0, scale: 0.9 },
+        }}
+      >
         <Resume />
-      </Section>
-      <Section>
+      </Animated>
+      <Animated>
         <Skills />
-      </Section>
-      <Section>
+      </Animated>
+      <Animated>
         <Contact />
-      </Section>
+      </Animated>
     </HomeLayout>
   );
 }
