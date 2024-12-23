@@ -1,6 +1,13 @@
 import { HiHome } from "react-icons/hi2";
-import { Description } from "../../ui/description/Description.style";
-import { Container } from "./Introduce.style";
+
+import {
+  Container,
+  Experience,
+  ExperienceItem,
+  ExperienceSubtitle,
+  ExperienceTitle,
+  Description,
+} from "./Introduce.style";
 import Header from "../../ui/header/Header";
 import ResumeButton from "../resume/parts/resume-button/ResumeButton";
 import { useIntroduce } from "./useIntroduce";
@@ -8,7 +15,9 @@ import { useIntroduce } from "./useIntroduce";
 function Introduce() {
   const { userInfo, loadingUserInfo } = useIntroduce();
   if (loadingUserInfo) return <></>;
-
+  const today = new Date();
+  const years =
+    today.getYear() - new Date(userInfo["work_start_year"]).getYear();
   return (
     <Container>
       <Header icon={<HiHome />} title="introduce" isLarge={true}>
@@ -16,6 +25,16 @@ function Introduce() {
       </Header>
       <Description>{userInfo["introduce_description"]}</Description>
       <ResumeButton />
+      <Experience>
+        <ExperienceItem>
+          <ExperienceTitle>{years - 1}+</ExperienceTitle>
+          <ExperienceSubtitle>Years of Experience</ExperienceSubtitle>
+        </ExperienceItem>
+        <ExperienceItem>
+          <ExperienceTitle>{userInfo["project_completed"]}+</ExperienceTitle>
+          <ExperienceSubtitle>Projects Completed</ExperienceSubtitle>
+        </ExperienceItem>
+      </Experience>
     </Container>
   );
 }
