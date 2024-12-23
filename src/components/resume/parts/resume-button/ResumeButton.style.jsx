@@ -1,17 +1,21 @@
+import { Link } from "react-scroll";
 import styled from "styled-components";
 
-const Container = styled.a`
+const LinkButton = styled(Link)`
+  margin-left: auto;
+`;
+
+const Container = styled.div`
   width: 175px;
   height: 175px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
   border-radius: 50%;
   border: 1px solid #575757;
   position: relative;
   overflow: hidden;
-  margin-right: 15px;
+  cursor: pointer;
 `;
 
 const Image = styled.img`
@@ -39,4 +43,4 @@ const Icon = styled.div`
   display: flex;
 `;
 
-export { Container, Image, Icon };
+export { Container, Image, Icon, LinkButton };
