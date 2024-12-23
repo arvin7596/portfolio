@@ -63,9 +63,6 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
-  /* Creating animations for dark mode */
-  transition: background-color 0.3s, border 0.3s;
 }
 
 html {
@@ -73,15 +70,12 @@ html {
 }
 
 body {
-  transition: color 0.3s, background-color 0.3s;
-  min-height: 100vh;
   font-family: 'Inter', sans-serif;
     font-size: 16px;
     scroll-behavior: smooth;
     color: var(--color-grey-500);
     background: #1f1f1f;
     line-height: 1.7;
-    overflow-x: hidden;
 }
 
 input,
@@ -98,25 +92,6 @@ button {
 
 *:disabled {
   cursor: not-allowed;
-}
-
-select:disabled,
-input:disabled {
-  background-color: var(--color-grey-200);
-  color: var(--color-grey-500);
-}
-
-input:focus,
-button:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid var(--color-brand-600);
-  outline-offset: -1px;
-}
-
-/* Parent selector, finally 😃 */
-button:has(svg) {
-  line-height: 0;
 }
 
 a {
@@ -141,16 +116,11 @@ h6 {
 
 img {
   max-width: 100%;
-
-  /* For dark mode */
-  filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
 }
 
 `;
 
 export default GlobalStyles;
-
-
 
 // --color-grey-0: #fff;
 //   --color-grey-50: #f9fafb;
@@ -184,7 +154,6 @@ export default GlobalStyles;
 //   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
 //   --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
 //   --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
-  
 
 //     --image-grayscale: 0;
 //   --image-opacity: 100%;
