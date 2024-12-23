@@ -1,7 +1,6 @@
 import { HiMiniUser } from "react-icons/hi2";
-import { Description } from "../../ui/description/Description.style";
 import Header from "../../ui/header/Header";
-import { Container } from "./about.style";
+import { Container, Description } from "./About.style";
 
 function About() {
   return (

@@ -5,5 +5,12 @@ const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
 `;
+const Description = styled.p`
+  font-size: 16px;
+  line-height: 30px;
+  text-align: start;
+  color: var(--color-grey-500);
+  margin-bottom: 30px;
+`;
 
-export { Container };
+export { Container, Description };
