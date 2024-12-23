@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
-const Container = styled.a`
+const Container = styled.li`
   text-align: center;
   color: #999999;
   transition: 0.3s;
   :hover {
-    color: #28e98c;
+    color: var(--color-primary);
     cursor: pointer;
   }
-  /* &[data-is-selected="true"] {
-    color: #28e98c;
-  } */
+  .active {
+    color: var(--color-primary);
+    transition: all 0.3s ease-in-out;
+  }
 `;
 
 export { Container };

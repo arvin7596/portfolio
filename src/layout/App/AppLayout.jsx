@@ -7,7 +7,7 @@ function AppLayout({ children }) {
         <source src="video5.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </Video>
-      <Content>{children}</Content>;
+      <Content id="content-wrapper">{children}</Content>
     </VideoBackground>
   );
 }

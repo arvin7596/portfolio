@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-const Container = styled.div`
+const Container = styled.nav``;
+
+const List = styled.ul`
   display: flex;
   flex-direction: column;
   border: 1px solid #575757;
@@ -14,4 +16,4 @@ const Container = styled.div`
   gap: 20px;
 `;
 
-export { Container };
+export { Container, List };

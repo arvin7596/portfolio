@@ -1,4 +1,4 @@
-import { Container } from "./Animated.style";
+import { Container } from "../section/Section.style";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -28,7 +28,7 @@ function Animated({ children, animationVariants }) {
         }
       }
     >
-      <Container animationVariants>{children}</Container>
+      {children}
     </motion.div>
   );
 }

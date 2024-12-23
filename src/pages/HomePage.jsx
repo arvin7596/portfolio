@@ -8,6 +8,10 @@ import Contact from "../components/contact/Contact";
 import Sidebar from "../components/sidebar/sidebar";
 import React, { useEffect } from "react";
 import { getUserInfo } from "../services/apiUserInfo";
+import Section from "../ui/section/Section";
+import { Element, Link } from "react-scroll";
+import Scroll from "react-scroll";
+const ScrollLink = Scroll.ScrollLink;
 
 function HomePage() {
   useEffect(() => {
@@ -15,27 +19,30 @@ function HomePage() {
   }, []);
   return (
     <HomeLayout>
-      <>
+      <Section title="Home">
         <Sidebar />
         <Introduce />
-      </>
-      <Animated>
-        <About />
-      </Animated>
-      <Animated
-        animationVariants={{
-          visible: { opacity: 1, scale: 1.1, transition: { duration: 0.5 } },
-          hidden: { opacity: 0, scale: 0.9 },
-        }}
-      >
-        <Resume />
-      </Animated>
-      <Animated>
-        <Skills />
-      </Animated>
-      <Animated>
-        <Contact />
-      </Animated>
+      </Section>
+      <Section title="About">
+        <Animated>
+          <About />
+        </Animated>
+      </Section>
+      <Section title="Resume">
+        <Animated>
+          <Resume />
+        </Animated>
+      </Section>
+      <Section title="Skills">
+        <Animated>
+          <Skills />
+        </Animated>
+      </Section>
+      <Section title="test1">
+        <Animated>
+          <Contact />
+        </Animated>
+      </Section>
     </HomeLayout>
   );
 }
