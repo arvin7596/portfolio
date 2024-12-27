@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.ul`
-  :last-child {
+  & div:last-child li {
     padding-bottom: 0px;
   }
 `;

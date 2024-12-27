@@ -4,7 +4,7 @@ const ResumeContainer = styled.li`
   display: flex;
   flex-direction: column;
   padding-left: 74px;
-  padding-bottom: 68px;
+  padding-bottom: 40px;
   position: relative;
   align-items: start;
   &::before {
