@@ -5,7 +5,7 @@ const Content = styled.div`
   z-index: 1;
   color: white;
   text-align: center;
-  margin-top: 50px;
+  padding-top: 50px;
   scroll-snap-type: y mandatory; /* Enable full-page scrolling */
   height: 100vh;
   overflow-y: scroll; /* Enable vertical scrolling */

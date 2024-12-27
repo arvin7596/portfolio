@@ -1,6 +1,6 @@
 import Introduce from "./../components/introduce/Introduce";
 import HomeLayout from "../layout/Home/HomeLayout";
-import About from "../components/about/about";
+import About from "../components/about/About";
 import Resume from "../components/resume/Resume";
 import Animated from "../ui/animated/Animated";
 import Skills from "../components/skills/Skills";
@@ -38,7 +38,7 @@ function HomePage() {
           <Skills />
         </Animated>
       </Section>
-      <Section title="test1">
+      <Section title="Contact">
         <Animated>
           <Contact />
         </Animated>
