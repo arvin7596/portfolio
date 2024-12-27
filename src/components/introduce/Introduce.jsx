@@ -10,10 +10,10 @@ import {
 } from "./Introduce.style";
 import Header from "../../ui/header/Header";
 import ResumeButton from "../resume/parts/resume-button/ResumeButton";
-import { useIntroduce } from "./useIntroduce";
+import { useUserInfo } from "../../hooks/useUserInfo";
 
 function Introduce() {
-  const { userInfo, loadingUserInfo } = useIntroduce();
+  const { userInfo, loadingUserInfo } = useUserInfo();
   if (loadingUserInfo) return <></>;
   const today = new Date();
   const years =
