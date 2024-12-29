@@ -1,11 +1,22 @@
-import { Input, Label, StyledFormRow, Textarea } from "./ContactForm.style";
+import MessageButton from "../../../../ui/message-button/MessageButton";
+import {
+  ButtonRow,
+  Input,
+  Label,
+  StyledFormRow,
+  Textarea,
+} from "./ContactForm.style";
 
 function ContactForm() {
-  function openEmail() {
-    var subject = "Hello!";
-    var body = "This is the email body.";
+  function onSubmit(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    var subject = data.subject;
+    var body = `Hello Arvin,\n\n${data.message}\n\nBest Regards,\n${data.fullName}
+    `;
     var mailto_link =
-      "mailto:example@example.com?subject=" +
+      "mailto:arvinghaffari75@gmail.com?subject=" +
       encodeURIComponent(subject) +
       "&body=" +
       encodeURIComponent(body);
@@ -13,24 +24,26 @@ function ContactForm() {
   }
 
   return (
-    <form>
+    <form onSubmit={onSubmit}>
       <StyledFormRow>
         <Label>FULL NAME</Label>
-        <Input type="text" />
+        <Input type="text" name="fullName" />
       </StyledFormRow>
-      <StyledFormRow>
+      {/* <StyledFormRow>
         <Label>EMAIL</Label>
         <Input type="text" />
-      </StyledFormRow>
+      </StyledFormRow> */}
       <StyledFormRow>
         <Label>SUBJECT</Label>
-        <Input type="text" />
+        <Input type="text" name="subject" />
       </StyledFormRow>
       <StyledFormRow>
         <Label>MESSAGE</Label>
-        <Textarea type="text" rows={5} />
+        <Textarea type="text" rows={5} name="message" />
       </StyledFormRow>
-      <button onClick={openEmail}></button>
+      <ButtonRow>
+        <MessageButton>message me</MessageButton>
+      </ButtonRow>
     </form>
   );
 }

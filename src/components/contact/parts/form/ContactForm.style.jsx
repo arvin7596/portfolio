@@ -33,6 +33,7 @@ const Error = styled.span`
 `;
 
 const Input = styled.input`
+  color: var(--color-black-900);
   border: 1px solid var(--color-grey-300);
   background-color: var(--color-grey-900);
   border-radius: var(--border-radius-sm);
@@ -40,6 +41,7 @@ const Input = styled.input`
   box-shadow: var(--shadow-sm);
 `;
 const Textarea = styled.textarea`
+  color: var(--color-black-900);
   border: 1px solid var(--color-grey-300);
   background-color: var(--color-grey-900);
   border-radius: var(--border-radius-sm);
@@ -47,4 +49,8 @@ const Textarea = styled.textarea`
   box-shadow: var(--shadow-sm);
 `;
 
-export { StyledFormRow, Label, Input, Textarea, Error };
+const ButtonRow = styled.div`
+  text-align: end;
+`;
+
+export { StyledFormRow, Label, Input, Textarea, Error, ButtonRow };
