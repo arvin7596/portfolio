@@ -1,10 +1,9 @@
 import { Container, Role } from "./Header.style";
 
-function Header() {
+function Header({ logo }) {
   return (
     <Container>
-      {/* <img src={logo} width={110}/> */}
-      <Role>Frontend Developer</Role>
+      <img src={logo} width={300} />
     </Container>
   );
 }

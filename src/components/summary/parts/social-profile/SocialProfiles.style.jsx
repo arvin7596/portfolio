@@ -10,7 +10,9 @@ const Container = styled.div`
 `;
 
 const Link = styled.a`
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50px;
   height: 50px;
   line-height: 57px;
@@ -20,10 +22,10 @@ const Link = styled.a`
   color: #999999;
   font-size: 20px;
   transition: 0.3s;
-  :hover {
-    color: #28e98c;
+  &:hover {
+    color: var(--color-primary);
     cursor: pointer;
-    border-color: #28e98c;
+    border-color: var(--color-primary);
   }
 `;
 

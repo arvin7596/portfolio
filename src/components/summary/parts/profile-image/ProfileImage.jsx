@@ -1,9 +1,10 @@
+import { useUserInfo } from "../../../../hooks/useUserInfo";
 import { Container, Image } from "./ProfileImage.style";
 
-function ProfileImage() {
+function ProfileImage({ image }) {
   return (
     <Container>
-      <Image src="photo.jpg" />
+      <Image src={image} />
     </Container>
   );
 }
