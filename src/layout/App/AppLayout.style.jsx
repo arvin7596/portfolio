@@ -16,7 +16,7 @@ const Content = styled.div`
 `;
 
 const VideoBackground = styled.div`
-  position: fixed; /* Ensures the video stays fixed while scrolling */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

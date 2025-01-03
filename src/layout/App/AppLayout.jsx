@@ -8,6 +8,7 @@ function AppLayout({ children }) {
         Your browser does not support the video tag.
       </Video>
       <Content id="content-wrapper">{children}</Content>
+      {/* <div id="content-wrapper">{children}</div> */}
     </VideoBackground>
   );
 }
