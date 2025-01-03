@@ -11,6 +11,7 @@ import { getUserInfo } from "../services/apiUserInfo";
 import Section from "../ui/section/Section";
 import { Element, Link } from "react-scroll";
 import Scroll from "react-scroll";
+import Portfolio from "../components/portfolio/Portfolio";
 const ScrollLink = Scroll.ScrollLink;
 
 function HomePage() {
@@ -36,6 +37,11 @@ function HomePage() {
       <Section title="Skills">
         <Animated>
           <Skills />
+        </Animated>
+      </Section>
+      <Section title="Portfolio">
+        <Animated>
+          <Portfolio />
         </Animated>
       </Section>
       <Section title="Contact">
