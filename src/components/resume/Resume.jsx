@@ -1,7 +1,7 @@
 import { Container } from "./Resume.style";
 import ResumeItem from "./parts/resume-item/ResumeItem";
 import Header from "./../../ui/header/Header";
-import { HiMiniBriefcase } from "react-icons/hi2";
+import { HiOutlineBriefcase } from "react-icons/hi2";
 import { useResume } from "../../hooks/useResume";
 
 function Resume() {
@@ -19,7 +19,7 @@ function Resume() {
 
   return (
     <>
-      <Header title="resume" icon={<HiMiniBriefcase />}>
+      <Header title="resume" icon={<HiOutlineBriefcase />}>
         Education & <span>Experience</span>
       </Header>
       <Container>

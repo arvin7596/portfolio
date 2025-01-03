@@ -1,7 +1,7 @@
 import SkillItem from "./parts/skill-item/SkillItem";
 import { Container } from "./Skills.style";
 import Header from "./../../ui/header/Header";
-import { HiMiniPuzzlePiece } from "react-icons/hi2";
+import { HiOutlinePuzzlePiece } from "react-icons/hi2";
 import { useSkills } from "../../hooks/useSkills";
 function Skills() {
   const { skills, loadingSkills } = useSkills();
@@ -9,7 +9,7 @@ function Skills() {
 
   return (
     <>
-      <Header title={"my skills"} icon={<HiMiniPuzzlePiece />}>
+      <Header title={"my skills"} icon={<HiOutlinePuzzlePiece />}>
         My <span>Advantages</span>
       </Header>
       <Container>

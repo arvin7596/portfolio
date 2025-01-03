@@ -13,9 +13,7 @@ function Portfolio() {
   const { projects, loadingProjects } = useProjects();
   if (loadingProjects) return <div>Loading...</div>;
   const openModal = (project) => {
-    console.log(project);
     setSelectedProject(project);
-
     setIsModalOpen(true);
   };
 

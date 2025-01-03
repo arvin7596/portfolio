@@ -1,10 +1,17 @@
-import { HiEnvelope, HiHome, HiMiniBriefcase, HiMiniPuzzlePiece, HiMiniUser } from "react-icons/hi2";
-
+import {
+  HiOutlineEnvelope,
+  HiOutlineHome,
+  HiOutlineBriefcase,
+  HiOutlineUser,
+  HiOutlineSquares2X2,
+  HiOutlinePuzzlePiece,
+} from "react-icons/hi2";
 
 export const SIDEBAR_ITEMS = [
-    { title: "Home", icon: < HiHome />, link: "/" },
-    { title: "About", icon: <HiMiniUser />, link: "/" },
-    { title: "Resume", icon: <HiMiniBriefcase />, link: "/" },
-    { title: "Skills", icon: <HiMiniPuzzlePiece />, link: "/" },
-    { title: "Contact", icon: <HiEnvelope />, link: "/" },
+  { title: "Home", icon: <HiOutlineHome /> },
+  { title: "About", icon: <HiOutlineUser /> },
+  { title: "Resume", icon: <HiOutlineBriefcase /> },
+  { title: "Skills", icon: <HiOutlinePuzzlePiece /> },
+  { title: "Portfolio", icon: <HiOutlineSquares2X2 /> },
+  { title: "Contact", icon: <HiOutlineEnvelope /> },
 ];

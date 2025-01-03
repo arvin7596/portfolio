@@ -1,5 +1,4 @@
-import { HiHome } from "react-icons/hi2";
-
+import { HiOutlineHome } from "react-icons/hi2";
 import {
   Container,
   Experience,
@@ -20,7 +19,7 @@ function Introduce() {
     today.getYear() - new Date(userInfo["work_start_year"]).getYear();
   return (
     <Container>
-      <Header icon={<HiHome />} title="introduce" isLarge={true}>
+      <Header icon={<HiOutlineHome />} title="introduce" isLarge={true}>
         Say Hi from <span>{userInfo.name}</span>, {userInfo.job}
       </Header>
       <Description>{userInfo["introduce_description"]}</Description>

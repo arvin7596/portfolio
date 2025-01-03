@@ -4,6 +4,7 @@ const Container = styled.li`
   text-align: center;
   color: #999999;
   transition: 0.3s;
+  font-size: 18px;
   :hover {
     color: var(--color-primary);
     cursor: pointer;
