@@ -1,3 +1,4 @@
+import { HiMiniArrowUpRight } from "react-icons/hi2";
 import {
   Badge,
   BadgeList,
@@ -8,8 +9,8 @@ import {
 
 function PortfolioCard({ cover, badges, link, title, onClick }) {
   return (
-    <Container onClick={onClick}>
-      <Card>
+    <Container>
+      <Card onClick={onClick}>
         <img src={cover} alt="project1" />
         <BadgeList>
           {badges.map((badge) => (
@@ -21,6 +22,7 @@ function PortfolioCard({ cover, badges, link, title, onClick }) {
         <a href={link} target="_blank">
           {title}
         </a>
+        {link && <HiMiniArrowUpRight />}
       </LinkContainer>
     </Container>
   );

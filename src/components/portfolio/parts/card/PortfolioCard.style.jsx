@@ -3,17 +3,18 @@ import styled from "styled-components";
 const Container = styled.section`
   display: flex;
   flex-direction: column;
+  gap: 6px;
 `;
 const Card = styled.div`
   position: relative;
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
-
+  height: 400px;
   img {
     width: 100%;
-    height: 400px;
-    /* object-fit: cover; */
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s ease;
   }
 
@@ -41,6 +42,8 @@ const Badge = styled.li`
   transition: 0.3s;
 `;
 const LinkContainer = styled.h3`
+  display: flex;
+  align-items: center;
   text-align: start;
   font-size: 24px;
   font-weight: 300;
