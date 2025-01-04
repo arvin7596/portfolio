@@ -5,14 +5,10 @@ import Resume from "../components/resume/Resume";
 import Animated from "../ui/animated/Animated";
 import Skills from "../components/skills/Skills";
 import Contact from "../components/contact/Contact";
-import Sidebar from "../components/sidebar/sidebar";
 import React, { useEffect } from "react";
 import { getUserInfo } from "../services/apiUserInfo";
 import Section from "../ui/section/Section";
-import { Element, Link } from "react-scroll";
-import Scroll from "react-scroll";
 import Portfolio from "../components/portfolio/Portfolio";
-const ScrollLink = Scroll.ScrollLink;
 
 function HomePage() {
   useEffect(() => {
@@ -21,7 +17,6 @@ function HomePage() {
   return (
     <HomeLayout>
       <Section title="Home">
-        <Sidebar />
         <Introduce />
       </Section>
       <Section title="About">
