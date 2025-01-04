@@ -11,6 +11,7 @@ function App() {
       queries: { staleTime: 0 },
     },
   });
+
   return (
     <QueryClientProvider client={queryClients}>
       <ReactQueryDevtools initialIsOpen={false} />

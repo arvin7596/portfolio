@@ -3,9 +3,10 @@ import { Container } from "./Skills.style";
 import Header from "./../../ui/header/Header";
 import { HiOutlinePuzzlePiece } from "react-icons/hi2";
 import { useSkills } from "../../hooks/useSkills";
+import Spinner from "../../ui/spinner/Spinner";
 function Skills() {
   const { skills, loadingSkills } = useSkills();
-  if (loadingSkills) return;
+  if (loadingSkills) return <Spinner />;
 
   return (
     <>

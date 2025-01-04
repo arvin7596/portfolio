@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-const Header = styled.h2``;
-
 const List = styled.ul`
   display: flex;
   flex-direction: column;

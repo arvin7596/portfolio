@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import PortfolioModal from "./parts/modal/PortfolioModal";
 import { motion } from "framer-motion";
 import { ProjectList } from "./Portfolio.style";
@@ -6,12 +6,13 @@ import Header from "../../ui/header/Header";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import PortfolioCard from "./parts/card/PortfolioCard";
 import { useProjects } from "../../hooks/useProjects";
+import Spinner from "../../ui/spinner/Spinner";
 
 function Portfolio() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { projects, loadingProjects } = useProjects();
-  if (loadingProjects) return <div>Loading...</div>;
+  if (loadingProjects) return <Spinner />;
   const openModal = (project) => {
     setSelectedProject(project);
     setIsModalOpen(true);

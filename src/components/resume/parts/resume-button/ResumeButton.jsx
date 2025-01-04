@@ -1,6 +1,5 @@
 import { HiArrowDown } from "react-icons/hi2";
 import { Icon, Image, Container, LinkButton } from "./ResumeButton.style";
-import { Link } from "react-scroll";
 
 function ResumeButton() {
   return (

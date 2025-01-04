@@ -1,7 +1,6 @@
-import React from "react";
 import { Dialog } from "@headlessui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectFade, Keyboard } from "swiper/modules";
+import { Navigation, Pagination, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

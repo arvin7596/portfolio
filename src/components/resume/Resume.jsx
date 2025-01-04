@@ -3,10 +3,11 @@ import ResumeItem from "./parts/resume-item/ResumeItem";
 import Header from "./../../ui/header/Header";
 import { HiOutlineBriefcase } from "react-icons/hi2";
 import { useResume } from "../../hooks/useResume";
+import Spinner from "../../ui/spinner/Spinner";
 
 function Resume() {
   const { resume, loadingResume } = useResume();
-  if (loadingResume) return;
+  if (loadingResume) return <Spinner />;
   const items = resume.reduce((acc, item) => {
     let group = acc.find((group) => group.start_year === item.start_year);
     if (!group) {

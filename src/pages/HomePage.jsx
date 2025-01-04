@@ -5,7 +5,7 @@ import Resume from "../components/resume/Resume";
 import Animated from "../ui/animated/Animated";
 import Skills from "../components/skills/Skills";
 import Contact from "../components/contact/Contact";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { getUserInfo } from "../services/apiUserInfo";
 import Section from "../ui/section/Section";
 import Portfolio from "../components/portfolio/Portfolio";

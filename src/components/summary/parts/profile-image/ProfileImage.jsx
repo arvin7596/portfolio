@@ -1,4 +1,3 @@
-import { useUserInfo } from "../../../../hooks/useUserInfo";
 import { Container, Image } from "./ProfileImage.style";
 
 function ProfileImage({ image }) {

@@ -10,10 +10,11 @@ import {
 import Header from "../../ui/header/Header";
 import ResumeButton from "../resume/parts/resume-button/ResumeButton";
 import { useUserInfo } from "../../hooks/useUserInfo";
+import Spinner from "../../ui/spinner/Spinner";
 
 function Introduce() {
   const { userInfo, loadingUserInfo } = useUserInfo();
-  if (loadingUserInfo) return <></>;
+  if (loadingUserInfo) return <Spinner />;
   const today = new Date();
   const years =
     today.getYear() - new Date(userInfo["work_start_year"]).getYear();

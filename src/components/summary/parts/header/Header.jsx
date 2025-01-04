@@ -1,4 +1,4 @@
-import { Container, Role } from "./Header.style";
+import { Container } from "./Header.style";
 
 function Header({ logo }) {
   return (
