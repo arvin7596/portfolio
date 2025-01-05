@@ -1,7 +1,7 @@
 import { useUserInfo } from "../../hooks/useUserInfo";
 import MessageButton from "../../ui/message-button/MessageButton";
 import { Container, Description, Email, Location } from "./Summary.style";
-import Header from "./parts/header/header";
+import Header from "./parts/header/Header";
 import ProfileImage from "./parts/profile-image/ProfileImage";
 import SocialProfiles from "./parts/social-profile/SocialProfiles";
 
