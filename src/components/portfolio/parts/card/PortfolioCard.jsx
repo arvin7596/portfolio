@@ -1,4 +1,4 @@
-import { HiMiniArrowUpRight } from "react-icons/hi2";
+import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import {
   Badge,
   BadgeList,
@@ -22,7 +22,7 @@ function PortfolioCard({ cover, badges, link, title, onClick }) {
         <a href={link} target="_blank">
           {title}
         </a>
-        {link && <HiMiniArrowUpRight />}
+        {link && <HiMiniArrowTopRightOnSquare size="20px" />}
       </LinkContainer>
     </Container>
   );

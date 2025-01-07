@@ -54,6 +54,9 @@ const LinkContainer = styled.h3`
     border-bottom: 1px solid var(--color-grey-900);
     transition: 0.3s;
   }
+  svg {
+    margin-left: 5px;
+  }
 `;
 
 export { Container, Card, Badge, LinkContainer, BadgeList };
