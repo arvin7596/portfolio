@@ -14,7 +14,7 @@ function Summary() {
       <Header logo={userInfo.logo} />
       <ProfileImage image={userInfo.image} />
       <Email>{userInfo.email}</Email>
-      <Location>Based in Berlin, Germany</Location>
+      <Location>Based in Augsburg, Germany</Location>
       <Description>
         © {year.getFullYear()} {userInfo.name}. All Rights Reserved
       </Description>
