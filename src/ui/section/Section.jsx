@@ -3,7 +3,7 @@ import { Container } from "./Section.style";
 
 function Section({ title, children }) {
   return (
-    <Element name={title}>
+    <Element name={title} id={title}>
       <Container>{children}</Container>
     </Element>
   );
