@@ -6,6 +6,14 @@ const Container = styled.div`
 `;
 
 const StyledHeader = styled.header`
+  @media (max-width: 787px) {
+    font-size: 58px;
+    line-height: 1.3;
+    font-style: normal;
+  }
+  @media (max-width: 584px) {
+    font-size: 37px;
+  }
   font-size: ${(props) => (props.isLarge ? "78px" : "48px")};
   text-align: start;
   letter-spacing: -0.2px;

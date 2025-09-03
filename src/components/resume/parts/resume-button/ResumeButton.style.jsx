@@ -2,6 +2,9 @@ import { Link } from "react-scroll";
 import styled from "styled-components";
 
 const LinkButton = styled(Link)`
+  @media (max-width: 1300px) {
+    display: none;
+  }
   margin-left: auto;
 `;
 

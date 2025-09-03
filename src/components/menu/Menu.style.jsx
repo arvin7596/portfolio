@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-const Container = styled.nav``;
+const Container = styled.nav`
+  @media (max-width: 1300px) {
+    display: none;
+  }
+`;
 
 const List = styled.ul`
   display: flex;

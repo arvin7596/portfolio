@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+  @media (max-width: 1300px) {
+    max-width: 700px;
+    margin: auto;
+    transform: none;
+    position: unset;
+  }
   border: 1px solid #565656;
   border-radius: 30px;
   min-width: 400px;

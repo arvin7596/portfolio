@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.li`
-  width: 170px;
-  height: 230px;
+  padding: 54px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -47,6 +47,7 @@ const Title = styled.h3`
   font-weight: 300;
   margin-bottom: 5px;
   color: #fff;
+  text-align: start;
 `;
 const Description = styled.div`
   font-size: 13px;
